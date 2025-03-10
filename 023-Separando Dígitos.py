@@ -5,7 +5,7 @@
 # milhar
 
 separating_digits = int(input('Digite um número ente 0 e 9999: '))
-unit = separating_digits // 1 % 10
+unit = separating_digits % 10
 ten = separating_digits // 10 % 10
 hundreds = separating_digits // 100 % 10
 thousand = separating_digits // 1000 % 10
