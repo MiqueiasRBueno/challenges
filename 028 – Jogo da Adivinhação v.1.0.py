@@ -26,3 +26,4 @@ else:
     # imprime essa mensagem na tela
     print(f'''    Número escolhido pelo usuário: {cores['roxo']}{number_user}{cores['limpa']}
     {cores['vermelho']}Não foi dessa vez, tente denovo!{cores['limpa']}''')
+
