@@ -14,7 +14,7 @@ if speed >= 80.1:
     # mensagem para o motorista multado, desrespeitou os limites de velocidade
     print(f'''    Você foi multado, excedeu o limite de velocidade!
     Velocidade máxima da via {cores['vermelho']}80{cores['limpa']} km
-    Valor de sua multa R$ {cores['vermelho']}{fine:.2f}{cores['limpa']}
+    Valor da sua multa aplicada R$ {cores['vermelho']}{fine:.2f}{cores['limpa']}
     {cores['amarelo']}Dirija com cuidado!{cores['limpa']}''')
 else:
     # mensagem para o motorista que respeitou os limites de velocidade
