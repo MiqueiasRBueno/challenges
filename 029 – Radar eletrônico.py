@@ -8,7 +8,7 @@ cores = {'branco': '\033[30m', 'vermelho': '\033[1;31m', 'verde': '\033[32m', 'a
 # interação com o usuário
 speed = int(input('Digite a velocidade atual do veículo: '))
 # compara se a informação é verdadeira ou falsa
-if speed >= 80.1:
+if speed > 80:
     # calcula o valor da multa a ser aplicado
     fine = (speed - 80) * 7
     # mensagem para o motorista multado, desrespeitou os limites de velocidade
