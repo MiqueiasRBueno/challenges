@@ -10,6 +10,7 @@ segment_a = segment_b = segment_c = 0
 # laço para inserção de dados de cada segmento
 for c in range(1,4):
     triangle_segment = float(input(f'Digite o {c}º seguimento: '))
+    # compara as informações fornecidas e as direcionam para seus lugares
     if c == 1:
         segment_a = triangle_segment
         segment_b = triangle_segment
@@ -21,6 +22,7 @@ for c in range(1,4):
             segment_b = triangle_segment
         if c == 3:
             segment_c = triangle_segment
+# define se os valores são capazes de formar um triângulo e responde conforme a análise
 if segment_a < segment_b + segment_c and segment_b < segment_a + segment_c and segment_c < segment_a + segment_b:
     print(f'Os seguimentos acima, {cores['verde']}podem formar um triângulo!{cores['limpa']}')
 else:
