@@ -14,14 +14,14 @@ print(f'''O valor da casa a financiar é de R$ {house_value:.2f}
 O salário do candidato ao financiamento é de R$ {buyer_salary:.2f}''')
 # Condições para o financiamento
 if salary_percentage <= 30:
-    print(f'''{'=' * 60}
+    print(f'''{'=' * 58}
 O valor das prestações são de R$ {installment_value:.2f}
 Corresponde á {salary_percentage:.0f}% do salário do candidato ao financiamento
 Meus parabéns, seu empréstimo foi aprovado!
-{'=' * 60}''')
+{'=' * 58}''')
 else:
-    print(f'''{'=' * 60}
+    print(f'''{'=' * 58}
 O valor das prestações são de R$ {installment_value:.2f}
 Corresponde á {salary_percentage:.0f}% do salário do candidato ao financiamento
 Que pena, seu empréstimo foi reprovado!
-{'=' * 60}''')
+{'=' * 58}''')
