@@ -17,7 +17,8 @@ option = int(input('''Digite uma das opções de 1 a 3: '''))
 print('\033[1;32m=\033[m' * 63)
 while option not in range(1, 4):
     option = int(input('Tente outra vez: '))
-    
+    if option == range(1, 4):
+        break
     print('\033[1;32m=\033[m' * 63)
 if option == 1:
     print(f'O número {number} convertido em binário é {bin(number)}')
