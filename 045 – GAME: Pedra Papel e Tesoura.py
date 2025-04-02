@@ -2,6 +2,7 @@
 
 # Importação da biblioteca:
 from random import choice
+from time import sleep
 
 # Título do jogo:
 print(f'''\033[1;31m{'=' * 55}\033[m
@@ -20,6 +21,13 @@ print(f'''\033[1;32m{'SUAS OPÇÕES':^55}\033[m
 [3] TESOURA
 \033[1;31m{'=' * 55}\033[m''')
 jogador = int(input('Digite sua opção: '))
+sleep(0.85)
+print('JO...')
+sleep(0.85)
+print('JOKEN...')
+sleep(0.85)
+print('JOKENPÔ!!!')
+sleep(0.85)
 # Condições para mostrar as mensagens
 if computador == 'PEDRA' and jogador == 2:
     print(f'''Computador escolheu "{computador}"
