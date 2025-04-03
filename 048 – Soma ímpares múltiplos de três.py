@@ -6,4 +6,5 @@ for c in range(1, 500, 2):
     if c % 3 == 0:
         soma += c
         cont += 1
-print(f'A soma de todos os {cont} valores ímpares, no intervalo de 1 à 500, múltiplo de 3 é {soma} ')
+print(f'A soma de todos os \033[1;34m{cont}\033[m valores ímpares, '
+      f'no intervalo de 1 à 500, múltiplo de 3 é \033[1;33m{soma} ')
