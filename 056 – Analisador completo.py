@@ -13,7 +13,7 @@ for c in range(1, 5):
         sexo = str(input('Sexo:[M/F] ')).strip().upper()
         if sexo == 'MF':
             break
-    media += idade / 4
+    media += idade
     if sexo == 'M':
         if c == 1:
             maior_idade = idade
@@ -24,6 +24,6 @@ for c in range(1, 5):
                 h_mais_velho = nome
     if sexo == 'F' and idade < 20:
         cont += 1
-print(f'''A média de idade do grupo é de {media} anos
+print(f'''A média de idade do grupo é de {media / 4:.0f} anos
 O homem mais velho do grupo tem {maior_idade} anos e se chama {h_mais_velho}
 Ao todo temos {cont} mulheres com menos de 20 anos''')
