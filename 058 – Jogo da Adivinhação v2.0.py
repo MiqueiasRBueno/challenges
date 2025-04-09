@@ -13,10 +13,10 @@ Será que você consegue adivinhar?''')
 palpite = int(input('Qual é o seu palpite? '))
 tentativas = 1
 while palpite != computador:
+    tentativas += 1
     if palpite < computador:
         palpite = int(input('Mais... Tente de novo! '))
     else:
         palpite = int(input('Menos ... Tente de novo! '))
-    tentativas += 1
 print(f'''\033[1;31m{'=' * 55}\033[m
 Parabéns, você acertou com {tentativas} tentativas!''')
