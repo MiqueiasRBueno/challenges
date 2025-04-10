@@ -2,6 +2,9 @@
 # 5! = 5 x 4 x 3 x 2 x 1 = 120
 from time import sleep
 
+print(f'''\033[1;31m{'=' * 55}\033[m
+{'CALCULADORA DE FATORIAL':^55}
+\033[1;31m{'=' * 55}\033[m''')
 number = int(input('Digite um valor: '))
 ft = number
 mult = 1
@@ -27,4 +30,5 @@ while ft != 1:
     sleep(0.8)
     print(f'\033[1;32mX\033[m {ft}', end=' ')
 print(f'\033[32;1m=\033[m {mult}'
+      f'\n\033[1;31m{'=' * 55}\033[m'
       f'\nO fatorial de {number}! é {mult}')
