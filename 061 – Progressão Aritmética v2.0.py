@@ -15,6 +15,6 @@ while n != 10:
     sleep(0.7)
     n += 1
     pa = termo_pa + (n - 1) * razao_pa
-    print(f'{pa}', end=' ')
+    print(f'{pa}', end='->')
 print(f'''\033[1;32mACABOU!\033[m
 \033[31;1m{'=' * 55}\033[m''')
