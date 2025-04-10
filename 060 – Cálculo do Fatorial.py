@@ -20,10 +20,11 @@ print('. . .', end=' ')
 sleep(0.8)
 print('. . .\033[m')
 sleep(0.8)
-print(f'{number}! \033[1;32m=\033[m {number}', end=' ')
+print(f'\033[1m{number}!\033[m \033[1;32m=\033[m {number}', end=' ')
 while ft != 1:
     ft -= 1
     mult *= ft + 1
     sleep(0.8)
     print(f'\033[1;32mX\033[m {ft}', end=' ')
-print(f'\033[32;1m=\033[m {mult}')
+print(f'\033[32;1m=\033[m {mult}'
+      f'\nO fatorial de {number}! é {mult}')
