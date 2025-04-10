@@ -20,7 +20,7 @@ print('. . .', end=' ')
 sleep(0.8)
 print('. . .\033[m')
 sleep(0.8)
-print(f'{number}', end=' ')
+print(f'{number}! \033[1;32m=\033[m {number}', end=' ')
 while ft != 1:
     ft -= 1
     mult *= ft + 1
