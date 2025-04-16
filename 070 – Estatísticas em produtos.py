@@ -16,6 +16,7 @@ while True:
     total += preco
     if cont == 1:
         menor_preco = preco
+        mais_barato = produto
     else:
         if preco < menor_preco:
             mais_barato = produto
