@@ -13,5 +13,5 @@ for pos in range(0, len(lista)): # imprime cada item da lista
     if pos % 2 == 0: # se o item da lista estiver em uma posição par:
         print(f'{lista[pos]:.<30}', end='')
     else: # se o item estiver em uma posição impar:
-        print(f'R$ {lista[pos]:>7}')
+        print(f'R$ {lista[pos]:>7.2f}')
 print(f'\033[1;31m{'='*40}\033[m')
