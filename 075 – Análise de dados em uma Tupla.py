@@ -9,12 +9,12 @@ print(f'Você digitou os valores: ', end=' ')
 for n1 in valores:
     print(f'\033[1;31m{n1}\033[m', end=' ')
 if 9 in valores:
-    print(f'\nO número 9 apareceu {valores.count(9)} vezes')
+    print(f'\nO número \033[1;35m9\033[m apareceu \033[1;35m{valores.count(9)}\033[m vezes')
 if 3 in valores:
-    print(f'\nO número 3 apareceu na posição {valores.index(3)+1}')
+    print(f'O número \033[1;33m3\033[m apareceu na \033[1;33m{valores.index(3)+1}\033[mª posição')
 else:
-    print('Não temos valores 3 em nossa tupla!')
+    print('\nNão temos valores \033[1;33m3\033[m em nossa tupla!')
 print('Os valores pares são: ', end=' ')
 for pares in valores:
     if pares % 2 == 0:
-        print(pares, end=' ')
+        print(f'\033[1;32m{pares}\033[m', end=' ')
