@@ -14,4 +14,3 @@ print(f'\nO menor valor digitado foi {min(valores)} e está na posição: ', end
 for i, v in enumerate(valores):
     if v == min(valores):
         print(i + 1, end='...')
-
