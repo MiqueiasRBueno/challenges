@@ -7,11 +7,10 @@ pares = []
 impares = []
 while True:
     value_int = int(input('Digite um valor: '))
+    value_list.append(value_int)
     if value_int % 2 == 0:
-        value_list.append(value_int)
         pares.append(value_int)
     else:
-        value_list.append(value_int)
         impares.append(value_int)
     stop = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
     if stop in 'N':
