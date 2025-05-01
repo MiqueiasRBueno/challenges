@@ -20,28 +20,3 @@ for c in range (0,5):
                 break
             pos += 1
 print(value_list)
-
-print(f'''\033[1;31m{'='*55}\033[m
-{'LISTA ORDENADA SEM REPETIÇÕES':^55}
-\033[1;31m{'='*55}\033[m''')
-value_list = []
-for c in range(0,5):
-    num = int(input(f'Digite o {c+1}º valor: '))
-    if num not in value_list:
-        if c == 0:
-            value_list.append(num)
-            print('Valor adicionado ao final da lista com sucesso!')
-        elif num > value_list[-1]:
-            value_list.append(num)
-            print('Valor adicionado ao final da lista com sucesso!')
-        else:
-            pos = 0
-            while pos < len(value_list):
-                if num <= value_list[pos]:
-                    value_list.insert(pos, num)
-                    print(f'Este valor foi adicionado na {pos} da lista!')
-                    break
-                pos += 1
-print(f'''\033[1;31m{'='*55}\033[m
-{f'Os valores digitados foram: {value_list}':^55}
-\033[1;31m{'='*55}\033[m''')
