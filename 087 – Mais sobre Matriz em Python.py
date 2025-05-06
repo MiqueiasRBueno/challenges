@@ -27,5 +27,3 @@ A soma de todos os números pares da matriz são : {soma_pares}
 E a soma de todos os números da terceira coluna é {soma}
 O maior número digitado na segunda linha da matriz foi: {maior}
 \033[1;31m{'=' * 55}\033[m''')
-
-
