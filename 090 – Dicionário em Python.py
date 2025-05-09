@@ -12,5 +12,5 @@ else:
     boletim['situacao'] = 'Aprovado'
 print(f'\033[1;31m{'=' * 55}\033[m')
 for k, v in boletim.items():
-    print((f'-{k}').title(), (f'é igual a {v}'))
+    print(f'-{f'{k}'.title()} é igual a {v}')
 print(f'\033[1;31m{'=' * 55}\033[m')
