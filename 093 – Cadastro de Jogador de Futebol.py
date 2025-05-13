@@ -18,9 +18,13 @@ for q in range(0, qtd_partida):
     ger_jogadores['Total'] = sum(qtd_gols)
 for k, v in ger_jogadores.items():
     print(f'O valor \033[32m{k}\033[m recebe o valor \033[32m{v}\033[m')
-print('\033[32m-=\033[m' * 30)
+print(f'''\033[32m{'-=' * 30}\033[m
+{'Número de Gols Por partida e Média':^60}
+\033[32m{'-=' * 30}\033[m''')
 tot = 0
 for c in qtd_gols:
     print(f'O jogador marcou \033[32m{c}\033[m gols na \033[32m{1 + tot}\033[mª partida')
     tot += 1
+print(f'O jogador \033[32m{ger_jogadores['Nome']}\033[m marcou uma média '
+      f'de \033[32m{sum(qtd_gols) / qtd_partida:.2f}\033[m gols por partida!')
 print('\033[32m-=\033[m' * 30)
