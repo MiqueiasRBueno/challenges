@@ -4,18 +4,23 @@
 # No final, tudo isso será guardado em um dicionário, incluindo o total de gols feitos durante o campeonato.
 
 print(f'''\033[1;32m{'-=' * 30}\033[m
-{'GERENCIAMENTO DE JOGADORES':^60}
+{'Gerenciamento de Jogadores' :^60}
 \033[1;32m{'-=' * 30}\033[m''')
-cad_jogador = dict()
+ger_jogadores = dict()
 qtd_gols = list()
-cad_jogador['Nome'] = str(input('Nome do Jogador e ou Jogadora: ')).title().strip()
-qtd_partidas = int(input(f'Quantas partidas o jogador e ou jogadora \033[34m{cad_jogador['Nome']}\033[m jogou? '))
+ger_jogadores['Nome'] = str(input('Nome do jogador e ou jogadora: ')).title().strip()
+qtd_partida = int(input(f'Quantas partidas \033[32m{ger_jogadores['Nome']}\033[m jogou? '))
+print('\033[32m-=\033[m' * 30)
+for q in range(0, qtd_partida):
+    qtd_gols.append(int(input(f'Quantos gols \033[32m{ger_jogadores['Nome']}\033[m'
+                              f' marcou na \033[32m{q + 1}\033[mª partida? ')))
+    ger_jogadores['Gols'] = qtd_gols
+    ger_jogadores['Total'] = sum(qtd_gols)
+for k, v in ger_jogadores.items():
+    print(f'O valor \033[32m{k}\033[m recebe o valor \033[32m{v}\033[m')
+print('\033[32m-=\033[m' * 30)
 tot = 0
-for qtd in range(0, qtd_partidas):
-    qtd_gols.append(int(input(f'Quantos gols \033[34m{cad_jogador['Nome']}\033[m na \033[34m{1 + tot}\033[mª'
-                              f' partida? ')))
-    cad_jogador['Gols'] = qtd_gols
-    cad_jogador['Total'] = sum(cad_jogador['Gols'])
+for c in qtd_gols:
+    print(f'O jogador marcou \033[32m{c}\033[m gols na \033[32m{1 + tot}\033[mª partida')
     tot += 1
-
-print(cad_jogador)
+print('\033[32m-=\033[m' * 30)
