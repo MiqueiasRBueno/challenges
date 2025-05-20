@@ -1,6 +1,6 @@
 # Aprimore o desafio 93 para que ele funcione com vários jogadores,
 # incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
-from operator import index
+
 
 jogadores_dicio = dict()
 jogadores_lista = list()
@@ -28,16 +28,12 @@ for i, j in enumerate(jogadores_lista):
     print(f' {i:<5}{j["Nomes"]:^15}{f'{j["Gols"]}':^13}{j["Total"]:^35}')
 print('-=' * 27)
 while True:
-    while True:
-        mostrar = int(input('Mostrar dados de qual jogador (999 Para parar): '))
-        if mostrar != len(jogadores_lista):
-            break
-        print('ERRO! Digite o código do jogador de acordo com a tabela!')
+    mostrar = int(input('Mostrar dados de qual jogador (999 Para parar): '))
     if mostrar == 999:
         break
     print(f' __LEVANTAMENTO DO JOGADOR E OU JOGADORA {jogadores_lista[mostrar]["Nomes"]}:')
-    print()
-    jogo = 0
-    for g in jogadores_lista[mostrar]['Gols']:
-        print(f'\t\tNo {1 + jogo}° jogo {jogadores_lista[0]["Nomes"]} fez {g} gols')
-        jogo += 1
+    if mostrar <= len(jogadores_lista):
+        partida = 0
+        for g in jogadores_lista[mostrar]['Gols']:
+            print(f'No {1 + partida}ª jogo ele fez {g} gols')
+            partida += 1
