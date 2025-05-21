@@ -26,7 +26,7 @@ print(f'\033[1;32m{"-=" * 27}\033[m')
 print(f'{"_CÓD":<10}{"NOME":^8}{"GOLS":^15}{"TOTAL":>20}')
 for i, j in enumerate(jogadores_lista):
     print(f' {i:<5}{j["Nomes"]:^15}{f'{j["Gols"]}':^13}{j["Total"]:^35}')
-print('-=' * 27)
+print('\033[1;32m-=\033[m' * 27)
 while True:
     mostrar = int(input('Mostrar dados de qual jogador (999 Para parar): '))
     if mostrar == 999:
@@ -39,3 +39,5 @@ while True:
         for g in jogadores_lista[mostrar]['Gols']:
             print(f'No {1 + partida}ª jogo ele fez {g} gols')
             partida += 1
+    print('\033[1;32m-=\033[m' * 27)
+print(f'\n{'\033[1;32m<<\033[mVolte Sempre!\033[1;32m>>\033[m':^70}')
