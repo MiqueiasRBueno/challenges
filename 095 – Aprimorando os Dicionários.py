@@ -1,14 +1,13 @@
 # Aprimore o desafio 93 para que ele funcione com vários jogadores,
 # incluindo um sistema de visualização de detalhes do aproveitamento de cada jogador.
 
-jogadores_dicio = dict()
-jogadores_lista = list()
-num_gols = []
 def linhas():
     print(f'\033[1;32m{"-=" * 27}\033[m')
 
 
-
+jogadores_dicio = dict()
+jogadores_lista = list()
+num_gols = []
 while True:
     jogadores_dicio['Nomes'] = str(input('Nomes do jogador e ou jogadora: ')).title().strip()
     num_partidas = int(input(f'Quantas partidas o jogador e ou jogadora {jogadores_dicio["Nomes"]} jogou?: '))
