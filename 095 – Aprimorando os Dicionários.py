@@ -31,8 +31,10 @@ while True:
     mostrar = int(input('Mostrar dados de qual jogador (999 Para parar): '))
     if mostrar == 999:
         break
-    print(f' __LEVANTAMENTO DO JOGADOR E OU JOGADORA {jogadores_lista[mostrar]["Nomes"]}:')
-    if mostrar <= len(jogadores_lista):
+    if mostrar >= len(jogadores_lista):
+        print(f'ERRO! Não existe jogador e ou jogadora com o código {mostrar}!')
+    else:
+        print(f' __LEVANTAMENTO DO JOGADOR E OU JOGADORA {jogadores_lista[mostrar]["Nomes"]}:')
         partida = 0
         for g in jogadores_lista[mostrar]['Gols']:
             print(f'No {1 + partida}ª jogo ele fez {g} gols')
