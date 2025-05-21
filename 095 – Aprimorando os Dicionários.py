@@ -6,6 +6,9 @@ jogadores_lista = list()
 num_gols = []
 def linhas():
     print(f'\033[1;32m{"-=" * 27}\033[m')
+
+
+
 while True:
     jogadores_dicio['Nomes'] = str(input('Nomes do jogador e ou jogadora: ')).title().strip()
     num_partidas = int(input(f'Quantas partidas o jogador e ou jogadora {jogadores_dicio["Nomes"]} jogou?: '))
