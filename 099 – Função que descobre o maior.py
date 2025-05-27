@@ -4,19 +4,20 @@
 from time import sleep
 
 def maior(*num):
+    tot = maior_n = 0
     print('\033[1;31m=\033[m' * 45)
     print('Analisando os valores passados...')
-    tot = 0
-    if len(num) <= 0:
-        print(f' _Foram informados {tot} valores!')
-        print(f'O maior valor informado foi 0')
-    else:
-        for c in num:
-            print(c, end=' ')
-            sleep(0.5)
-            tot += 1
-        print(f' _Foram informados {tot} valores!')
-        print(f'O maior valor informado foi {max(num)}')
+    for c in num:
+        print(c, end=' ')
+        sleep(0.5)
+        if tot == 0:
+            maior_n = c
+        else:
+            if c > maior_n:
+                maior_n = c
+        tot += 1
+    print(f' _Foram informados {tot} valores!')
+    print(f'O maior valor informado foi {maior_n}')
 
 
 # Programa Principal:
