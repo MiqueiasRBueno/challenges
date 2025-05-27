@@ -5,7 +5,7 @@
 from random import randint
 
 numeros = list()
-# função para sorteiar 5 valores:
+# função para sortear 5 valores:
 def sorteia(lista):
     print('\033[32m-\033[m' * 45)
     print('Sorteando 5 valores: ', end=' ')
