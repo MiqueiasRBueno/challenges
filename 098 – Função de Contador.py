@@ -3,8 +3,8 @@
 # a) de 1 até 10, de 1 em 1
 # b) de 10 até 0, de 2 em 2
 # c) uma contagem personalizada
-from time import sleep
 
+from time import sleep
 
 # Configuração da função contador:
 def contador(i, f, p):
@@ -29,6 +29,7 @@ def contador(i, f, p):
             sleep(0.5)
             cont -= p
         print('Fim')
+
 
 # Programa principal:
 contador(1, 10, 1)
