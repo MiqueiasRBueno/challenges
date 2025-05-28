@@ -24,12 +24,15 @@ def sorteia(lista):
 # função para a soma de pares:
 def somapar(lista):
     print('\033[32m-\033[m' * 53)
-    print(f'A soma dos valores pares de {lista}, temos: ', end='')
+    print(f'A soma dos valores pares', end=' ')
     soma = 0
     for valor in lista:
         if valor % 2 == 0:
             soma += valor
-    print(soma)
+            sleep(0.3)
+            print(valor, end=' ')
+    sleep(0.3)
+    print(f', temos {soma}')
 
 
 # Programa principal
