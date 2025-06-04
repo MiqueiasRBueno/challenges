@@ -9,7 +9,7 @@
 # Função:
 def notas(*num, show=False):
     """
-        — > A função notas é um programa para adicionar a nota de vários alunos
+        — > A função notas é um programa para analisar notas de vários alunos
         :param num: recebe os números adicionados
         :param show: se verdadeiro mostra a situação da média das notas da classe
         :return: retorna um dicionário com os dados adicionados
