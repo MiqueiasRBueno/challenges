@@ -7,14 +7,14 @@ def leiaInt(msg):
     valor = 0
     while True:
         n = str(input(msg))
-        if  n.isnumeric():
-            valor = n
-            ok = True
-        else:
-            print('\033[0;31mERRO! Digite um número válido!\033[m')
-        if ok:
-            break
-    return valor
+        if  n.isnumeric(): # analisa se 'n' é um valor numérico
+            valor = n # Se 'n' for um valor numérico, valor = n
+            ok = True # ok passa a ser verdadeiro
+        else: # se 'n' não for um valor numérico
+            print('\033[0;31mERRO! Digite um número válido!\033[m') # Exibe uma mensagem de erro
+        if ok: # se tudo ok
+            break # finaliza o programa
+    return valor # retorna o valor de valor
 
 
 
