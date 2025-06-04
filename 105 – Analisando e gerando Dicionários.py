@@ -11,7 +11,7 @@ classe = dict()
 
 # Função:
 def notas(*num, show=False):
-    tot = maior = menor = soma = media = 0
+    tot = maior = menor = soma = 0
     for i, n in enumerate(num):
         tot += 1
         soma += n
