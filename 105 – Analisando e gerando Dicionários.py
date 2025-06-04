@@ -11,6 +11,13 @@ classe = dict()
 
 # Função:
 def notas(*num, show=False):
+    """
+        — > A função notas é um programa para adicionar a nota de vários alunos
+        :param num: recebe os números adicionados
+        :param show: se verdadeiro mostra a situação da média das notas da classe
+        :return: retorna um dicionário com os dados adicionados
+        """
+
     tot = maior = menor = soma = 0
     for i, n in enumerate(num):
         tot += 1
