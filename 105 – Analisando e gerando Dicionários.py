@@ -30,7 +30,7 @@ def notas(*num, show=False):
     if show:
         if media < 5:
             classe['Situação'] = 'Ruim!'
-        if media < 7:
+        if media > 5:
             classe['Situação'] = 'Boa!'
         if media >= 7:
             classe['Situação'] = 'Ótima!'
@@ -39,5 +39,5 @@ def notas(*num, show=False):
 
 
 # Programa principal
-classe = notas(0, 4, 5, 6, 8, 9, show=True)
+classe = notas(10, 4, 5, 10, 8, 9, show=True)
 print(classe)
