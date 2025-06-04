@@ -6,9 +6,6 @@
 # – A média da turma
 # – A situação (opcional)
 
-# Dicionário:
-classe = dict()
-
 # Função:
 def notas(*num, show=False):
     """
@@ -17,7 +14,7 @@ def notas(*num, show=False):
         :param show: se verdadeiro mostra a situação da média das notas da classe
         :return: retorna um dicionário com os dados adicionados
         """
-
+    classe = dict()
     tot = maior = menor = soma = 0
     for i, n in enumerate(num):
         tot += 1
@@ -46,5 +43,5 @@ def notas(*num, show=False):
 
 
 # Programa principal
-classe = notas(10, 4, 5, 10, 8, 9, show=True)
-print(classe)
+resp = notas(10, 4, 5, 10, 8, 9, show=True)
+print(resp)
