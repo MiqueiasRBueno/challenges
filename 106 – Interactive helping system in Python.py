@@ -8,11 +8,12 @@ def intHelp():
     • > Função mini-sistema que utiliza o interactive help do Python
     :return:
     """
-    print(f'''\033[1;42m{"-" * 40}
+
+    while True:
+        print(f'''\033[1;42m{"-" * 40}
 {"SISTEMA DE AJUDA PYTON HELP":^40}
 {"-" * 40}
 \033[m''', end='')
-    while True:
         msg = str(input('Função ou Biblioteca>> '))
         if msg in 'fim':
             break
