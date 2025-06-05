@@ -6,7 +6,7 @@
 def intHelp():
     """
     • > Função mini-sistema que utiliza o interactive help do Python
-    :return: A documentação da função ou biblioteca desejada
+    :return:
     """
     print(f'''\033[1;42m{"-" * 40}
 {"SISTEMA DE AJUDA PYTON HELP":^40}
@@ -26,7 +26,6 @@ def intHelp():
 {"ATÉ LOGO!":^40}
 {"-" * 40}
 \033[m''')
-    return help
 
 
 # Programa principal:
