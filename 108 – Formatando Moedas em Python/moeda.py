@@ -1,4 +1,4 @@
-def aumentar(preco, taxa):
+def aumentar(preco=0, taxa=0):
     """
     _> Função para aumentar uma porcentagem de um valor digitado pelo usuário.
     :param preco: Número a ser aumentado
@@ -9,7 +9,7 @@ def aumentar(preco, taxa):
     return res
 
 
-def diminuir(preco, taxa):
+def diminuir(preco=0, taxa=0):
     """
     _> Função que diminui uma porcentagem de um valor digitado pelo usuário.
     :param preco: Número a ser diminuído
@@ -20,7 +20,7 @@ def diminuir(preco, taxa):
     return res
 
 
-def dobro(preco):
+def dobro(preco=0):
     """
     _> Dobra um valor digitado pelo usuário
     :param preco: valor digitado pelo usuário para ser dobrado
@@ -30,7 +30,7 @@ def dobro(preco):
     return res
 
 
-def metade(preco):
+def metade(preco=0):
     """
     _> Função que mostra a metade do valor digitado pelo usuário
     :param preco: valor digitado pelo usuário para ser dividido pela metade
