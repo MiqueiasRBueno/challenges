@@ -1,6 +1,5 @@
-# Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade().
-# Faça também um programa que importe esse módulo e use algumas dessas funções.
-
+# Adapte o código do desafio #107, criando uma função adicional chamada moeda()
+# que consiga mostrar os números como um valor monetário formatado.
 import moeda
 num = float(input('Digite o preço: R$ '))
 por = float(input('Qual a taxa desejada?: '))
