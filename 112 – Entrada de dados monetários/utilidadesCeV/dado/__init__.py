@@ -25,7 +25,7 @@ def leiaDinheiro(txt):
             valor = float(dinh)
             ok = True
         else:
-            print(f'ERRO! "{dinh}" não é um valor válido!')
+            print(f'\033[31mERRO! "{dinh}" não é um valor válido!\033[m')
         if ok:
             break
     return valor
