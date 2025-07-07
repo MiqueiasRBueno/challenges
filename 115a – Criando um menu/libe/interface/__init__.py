@@ -18,14 +18,29 @@ def leiaInt(msg):
     return valor  # retorna o valor de valor
 
 def linha(tam=42):
+    """
+    Cria linhas divisórias
+    :param tam: tamanho da linha
+    :return: retorna linha formatada
+    """
     return '\033[31m-\033[m' * tam
 
 def cabecalho(txt):
+    """
+    Cria um cabeçalho formatado
+    :param txt: texto a ser inserido no cabeçalho
+    :return: Cabeçalho formatado
+    """
     print(linha())
     print(txt.center(42))
     print(linha())
 
 def menu(lista):
+    """
+    Cria menu formatado
+    :param lista: dados do menu
+    :return: Menu formatado
+    """
     cabecalho('Menu Principal')
     c = 1
     for item in lista:
